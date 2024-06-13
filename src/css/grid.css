@@ -1,0 +1,110 @@
+.grid_boxflex {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.grid_box1 h2 {
+  width: 60%;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+.grid_box1 h2 span {
+  background: -webkit-linear-gradient(#a8004e, #ec559b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.grid_box1 {
+  border: solid;
+  padding: 25px;
+  background-color: #0e0315;
+  color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 740px;
+  margin-right: 10px;
+}
+.grid_box2 {
+  width: 300px;
+  background-color: white;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.grid_box2 h3 {
+  margin: 10px 0px;
+}
+.grid_box1 p {
+  width: 80%;
+}
+
+@media screen and (max-width: 1022px) and (min-width: 768px) {
+  .grid_boxflex {
+    display: flex;
+  }
+  .grid_box1 {
+    border: solid;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  .grid_box1 h2 {
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .grid_box1 p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .grid_boxflex {
+    display: flex;
+    justify-content: center;
+  }
+  .grid_box1 {
+    border: solid;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  .grid_box1 h2 {
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .grid_box1 p {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .grid_boxflex {
+    display: flex;
+    justify-content: center;
+  }
+  .grid_box1 {
+    border: solid;
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  .grid_box1 h2 {
+    width: 100%;
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  .grid_box1 p {
+    width: 100%;
+  }
+}

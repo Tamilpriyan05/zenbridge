@@ -1,0 +1,41 @@
+.scrool_box {
+  padding: 15px 50px;
+  background: rgb(189, 0, 88);
+  background: linear-gradient(
+    90deg,
+    rgba(189, 0, 88, 1) 0%,
+    rgba(151, 0, 70, 1) 14%,
+    rgba(126, 0, 58, 1) 27%,
+    rgba(113, 26, 69, 1) 37%,
+    rgba(86, 79, 91, 1) 53%,
+    rgba(232, 42, 130, 1) 63%,
+    rgba(236, 85, 155, 1) 75%,
+    rgba(249, 204, 225, 1) 83%,
+    rgba(241, 128, 180, 1) 93%
+  );
+  white-space: nowrap;
+  overflow: hidden;
+}
+.scrool_box1 {
+  display: inline-block;
+
+  /* overflow: hidden; */
+  animation: 30s silde infinite linear;
+}
+.scrool_box:hover .scrool_box1 {
+  animation-play-state: paused;
+}
+
+.scrool_box img {
+  width: 110px;
+  margin: 0px 40px;
+}
+
+@keyframes silde {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

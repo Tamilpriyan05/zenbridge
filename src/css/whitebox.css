@@ -1,0 +1,75 @@
+.white_box {
+  text-align: center;
+  margin-top: 60px;
+}
+.white_box h2 span {
+  background: -webkit-linear-gradient(#e82a82, #d9c1cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Whitegraph_box {
+  display: flex;
+  padding: 40px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  margin-top: 30px;
+}
+
+.Whitegraph_box ul {
+  text-align: start;
+  margin-right: 20px;
+}
+.Whitegraph_box ul li {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+.clickwhite {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #e82a82;
+  font-weight: 700;
+  box-shadow: 1px 1px 10px black;
+  border: none;
+  border-radius: 10px;
+}
+.Whitegraph_box img {
+  width: 700px;
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 576px) {
+  .white_box {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .white_box h2 span {
+    background: -webkit-linear-gradient(#e82a82, #d9c1cc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .Whitegraph_box {
+    display: flex;
+    padding: 30px;
+  }
+
+  .Whitegraph_box ul {
+    text-align: start;
+    margin-right: 20px;
+  }
+
+  .Whitegraph_box img {
+    width: 350px;
+    height: 400px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .Whitegraph_box {
+    display: block;
+    padding: 30px;
+  }
+  .Whitegraph_box img {
+    width: 250px;
+    height: 300px;
+  }
+}

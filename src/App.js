@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import "./css/app.css";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Scrool from "./components/Scrool";
+import Profile from "./components/Profile";
+import Grid from "./components/Grid";
+import Support from "./components/Support";
+import Api from "./components/Api";
+import Footer from "./components/Footer";
+import Insights from "./components/Insights";
+import About from "./components/About";
+import Nav from "./components/Nav";
+import { useState } from "react";
 
 function App() {
+  const [status, setStatus] = useState(true);
+
+  const getstaus = (status) => {
+    setStatus(status);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header sendstatus={getstaus} />
+      <Nav send={status} />
+      <Home />
+      <Scrool />
+      <Profile />
+      <Grid />
+      <Support />
+      <Api />
+      <About />
+      <Insights />
+      <Footer />
     </div>
   );
 }
